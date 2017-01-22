@@ -1,0 +1,21 @@
+﻿#python基本操作
+print cmp("a","b")
+print cmp("abc","aaa")
+print cmp("a","a")
+dir(str)
+#文件太大，不能用read()或者readlines()一次性将全部内容读入内存，可以使用while循环
+#和readline()来完成这个任务。在对付很大文件是，就有一个模块供我们驱使：fileinput模块
+import fileinput
+for line in fileinput.input("you.md"):
+    print line
+#参数w 以写方式打开文件，可想文件写入信息。如果文件存在，则清空该文件，再写入新内容
+#a以追加模式打开文件（打开文件，文件指针自动移到文件末尾），如果文件不存在则创建。
+###
+f=open("C:\\Users\\123\\Desktop\\fft.txt")
+while True:
+    line=f.readline()
+    if not line:
+        break
+    print lines,
+f.close()
+#注意后面的逗号
