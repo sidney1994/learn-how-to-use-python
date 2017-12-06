@@ -16,6 +16,6 @@ while True:
     line=f.readline()
     if not line:
         break
-    print lines,
+    print lines
 f.close()
 #注意后面的逗号
